@@ -11,10 +11,16 @@ import org.springframework.web.bind.annotation.RestController;
  * @Description:
  */
 @RestController
+@RequestMapping("/hello")
 public class HelloController {
 
     @Autowired
     private Resource resource;
+
+    @RequestMapping("/test")
+    public Object hello(){
+        return "hello SpringBoot";
+    }
 
     @RequestMapping("/getResource")
     public IMoocJSONResult getResource() {

@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.concurrent.Future;
 
 /**
- * @Description:
+ * @Description:异步任务测试类
  */
 @RestController
 @RequestMapping("/tasks")
