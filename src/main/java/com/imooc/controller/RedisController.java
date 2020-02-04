@@ -1,7 +1,6 @@
 package com.imooc.controller;
 
 import com.imooc.pojo.IMoocJSONResult;
-import com.imooc.pojo.SysUser;
 import com.imooc.pojo.User;
 import com.imooc.utils.JsonUtils;
 import com.imooc.utils.RedisOperator;
@@ -29,20 +28,21 @@ public class RedisController {
 
     @RequestMapping("/test")
     public IMoocJSONResult test(){
-        redisTemplate.opsForValue().set("imooc-cache","hello imooc");
-
-        SysUser sysUser = new SysUser();
-        sysUser.setId("10011");
-        sysUser.setUsername("imooc");
-        sysUser.setPassword("1213");
-        sysUser.setIsDelete(0);
-        sysUser.setRegistTime(new Date());
-        redisTemplate.opsForValue().set("json:user", JsonUtils.objectToJson(sysUser));
-
-        SysUser jsonUser;
-        jsonUser = JsonUtils.jsonToPojo(redisTemplate.opsForValue().get("json:user"),SysUser.class);
-
-        return IMoocJSONResult.ok(jsonUser);
+//        redisTemplate.opsForValue().set("imooc-cache","hello imooc");
+//
+//        SysUser sysUser = new SysUser();
+//        sysUser.setId("10011");
+//        sysUser.setUsername("imooc");
+//        sysUser.setPassword("1213");
+//        sysUser.setIsDelete(0);
+//        sysUser.setRegistTime(new Date());
+//        redisTemplate.opsForValue().set("json:user", JsonUtils.objectToJson(sysUser));
+//
+//        SysUser jsonUser;
+//        jsonUser = JsonUtils.jsonToPojo(redisTemplate.opsForValue().get("json:user"),SysUser.class);
+//
+//        return IMoocJSONResult.ok(jsonUser);
+        return null;
     }
 
     @RequestMapping("/getJsonList")

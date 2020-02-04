@@ -12,14 +12,8 @@ import org.springframework.stereotype.Component;
 
 /**
  * 
- * @Title: RedisOperator.java
- * @Package com.itzixi.web.component
- * @Description: 使用redisTemplate的操作实现类 Copyright: Copyright (c) 2016
- *               Company:FURUIBOKE.SCIENCE.AND.TECHNOLOGY
- * 
- * @author leechenxiang
- * @date 2017年9月29日 下午2:25:03
- * @version V1.0
+ *
+ * @Description: 使用redisTemplate的操作实现类
  */
 @Component
 public class RedisOperator {
